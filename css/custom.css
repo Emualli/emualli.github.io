@@ -1,0 +1,66 @@
+#recherche_client {
+  padding: 10px 20px 0px 20px !important;
+}
+
+
+#client_button_container {
+  display: inline-block;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+#new_client_button {
+}
+
+#address_1 {
+  margin-top:20px;
+}
+
+#add_button1 {
+  width: 40px;
+  height: 40px;
+  line-height: 2.7;
+}
+
+#remove_button1 {
+  width: 40px;
+  height: 40px;
+  line-height: 2.7;
+}
+
+#number1 {
+  padding: 0 20px;
+}
+
+#number2 {
+  padding: 0 20px;
+}
+
+#add_button2 {
+  width: 40px;
+  height: 40px;
+  line-height: 2.7;
+}
+
+#remove_button2 {
+  width: 40px;
+  height: 40px;
+  line-height: 2.7;
+}
+
+#number3 {
+  padding: 0 20px;
+}
+
+
+#add_button3 {
+  width: 40px;
+  height: 40px;
+  line-height: 2.7;
+}
+
+#remove_button3 {
+  width: 40px;
+  height: 40px;
+  line-height: 2.7;
+}

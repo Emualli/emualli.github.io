@@ -1,0 +1,227 @@
+<html>
+<link rel="stylesheet" href="css/materialize.css">
+<link rel="stylesheet" href="css/custom.css">
+<head>
+<title>Prototype formulaire de réservation Yuso - Livraison</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col s6">
+      <div class="card white">
+        <div class="card-content white" id="recherche_client">
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email" data-error="wrong" data-success="right">Rechercher un client...</label>
+                  </div>
+                  <div class="input-field col s6">
+                      <select class="browser-default">
+                        <option value="" disabled selected>Client...</option>
+                        <option value="1">Guillaume Degermann</option>
+                        <option value="2">Benoit Richard</option>
+                        <option value="3">B&eacute;chir Tourki</option>
+                      </select>
+                  </div>
+                  <div class='input-field col s2' id='client_button_container'>
+                  <a class="waves-effect waves-white btn" id='new_client_button'>CR&Eacute;ER</a>
+                </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      <div class="card white">
+        <div class="card-content white" id="recherche_client">
+          <p style="padding-top: 20px; padding-left: 15px;">Adresse d'enl&egrave;vement</p>
+            <div class="row" id="address_1">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="client" type="email" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Client</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="contact" type="email">
+                    <label for="text" data-error="wrong" data-success="right">Contact</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="cpy_name" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Nom de l'entreprise</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="phone" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Num&eacute;ro de t&eacute;l&eacute;phone</label>
+                  </div>
+                  <div class="input-field col s9">
+                    <input id="address1" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Adresse d'enl&egrave;vement</label>
+                  </div>
+                  <div class="input-field col s3">
+                    <input id="more_info1" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Appartement, porte</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="more_info2" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Instructions sp&eacute;cifiques</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      <div class="card white">
+        <div class="card-content white" id="recherche_client">
+          <p style="padding-top: 20px; padding-left: 15px;">Adresse de livraison</p>
+            <div class="row" id="address_1">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="client" type="email" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Client</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="contact" type="email" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Contact</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="cpy_name" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Nom de l'entreprise</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="phone" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Num&eacute;ro de t&eacute;l&eacute;phone</label>
+                  </div>
+                  <div class="input-field col s9">
+                    <input id="address1" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Adresse d'enl&egrave;vement</label>
+                  </div>
+                  <div class="input-field col s3">
+                    <input id="more_info1" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Appartement, porte</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="more_info2" type="text" class="validate">
+                    <label for="text" data-error="wrong" data-success="right">Instructions sp&eacute;cifiques</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s6">
+      <div class="card white">
+        <div class="card-content white" id="recherche_client">
+          <p style="padding-top: 20px; padding-left: 15px;">Type de colis</p>
+            <div class="row" id="address_1">
+              <form class="col s12">
+                <div class="row">
+                  <div class="col s2">
+                  <img src="https://rush.uber.com/icon_package_envelope-02c4dc71.svg" style="width: 40px">
+                  </div>
+                  <div class="col s6">
+                  <span style="margin-top: 10px; display:inline-block;">Lettre / Enveloppe</span>
+                  </div>
+                  <div class="col s4">
+                    <a class="btn-floating btn-large waves-effect waves-grey" id="remove_button1"><span class="material-icons">-</span></a>&nbsp;<span id='number1'>0</span>&nbsp;<a class="btn-floating btn-large waves-effect waves-grey" id="add_button1"><span class="material-icons">+</span></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s2">
+                  <img src="https://rush.uber.com/icon_package_small-3653310f.svg" style="width: 40px">
+                  </div>
+                  <div class="col s6">
+                  <span style="margin-top: 10px; display:inline-block;">Petit Colis</span>
+                  </div>
+                  <div class="col s4">
+                    <a class="btn-floating btn-large waves-effect waves-grey" id="remove_button2"><span class="material-icons">-</span></a>&nbsp;<span id='number2'>0</span>&nbsp;<a class="btn-floating btn-large waves-effect waves-grey" id="add_button2"><span class="material-icons">+</span></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s2">
+                  <img src="https://rush.uber.com/icon_package_large-b30fde12.svg" style="width: 40px">
+                  </div>
+                  <div class="col s6">
+                  <span style="margin-top: 10px; display:inline-block;">Grand Colis</span>
+                  </div>
+                  <div class="col s4">
+                    <a class="btn-floating btn-large waves-effect waves-grey" id="remove_button3"><span class="material-icons">-</span></a>&nbsp;<span id='number3'>0</span>&nbsp;<a class="btn-floating btn-large waves-effect waves-grey" id="add_button3"><span class="material-icons">+</span></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      <div class="card white">
+        <div class="card-content white" id="recherche_client">
+          <p style="padding-top: 20px; padding-left: 15px;">Date d'enl&egrave;vement</p>
+            <div class="row" id="date_enlevement">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input type="date" class="datepicker" placeholder="jj/mm/aaaa">
+                  </div>
+                  <div class="input-field col s3">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Hours</option>
+                      <option value="1">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                    </select>
+                  </div>
+                  <div class="input-field col s3">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Minutes</option>
+                      <option value="0">0</option>
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50">50</option>
+                      <option value="55">55</option>
+                    </select>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      <div class="card white">
+        <div class="card-content white" id="recherche_client">
+          <p style="padding-top: 20px; padding-left: 15px;">Mode de livraison</p>
+            <div class="row" id="address_1">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="client" type="date">
+                    <label for="date" data-error="wrong" data-success="right">Date</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script src="js/materialize.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
