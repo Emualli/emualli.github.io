@@ -146,8 +146,23 @@
                   <div class="col s6">
                   <span style="margin-top: 10px; display:inline-block;">Grand Colis</span>
                   </div>
-                  <div class="col s4">
+                  <div class="col s4" id="last-grd">
                     <a class="btn-floating btn-large waves-effect waves-grey" id="remove_button3"><span class="material-icons">-</span></a>&nbsp;<span id='number3'>0</span>&nbsp;<a class="btn-floating btn-large waves-effect waves-grey" id="add_button3"><span class="material-icons">+</span></a>
+                  </div>
+                  <div class="col s10 offset-s2">
+                    <div class="row">
+                    <div class="input-field col s4">
+                    <span style="margin-top: 10px; display:inline-block;">Colis <span id="num_colis">1</span></span>
+                    </div>
+                    <div class="input-field col s3" style="margin-left:75px">
+                      <input id="cpy_name" type="text" class="validate">
+                      <label for="text" data-error="wrong" data-success="right">Poids</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="cpy_name" type="text" class="validate">
+                      <label for="text" data-error="wrong" data-success="right">Volume</label>
+                    </div>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -206,6 +221,18 @@
       <div class="card white">
         <div class="card-content white" id="recherche_client">
           <p style="padding-top: 20px; padding-left: 15px;">Mode de livraison</p>
+            <div class="row" id="address_1">
+              <form class="col s12">
+                <div class="row">
+                  TODO
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      <div class="card white">
+        <div class="card-content white" id="recherche_client">
+          <p style="padding-top: 20px; padding-left: 15px;">Options</p>
             <div class="row" id="address_1">
               <form class="col s12">
                 <div class="row">
